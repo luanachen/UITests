@@ -15,7 +15,7 @@ class DefaultFlowTest: QuickSpec {
             var window: UIWindow!
             
             beforeEach {
-                window = UIApplication.shared.keyWindow
+                window = UIApplication.shared.windows.first { $0.isKeyWindow }
                 window.frame = CGRect(x:0, y:0, width: 320, height: 564)
                 window.makeKeyAndVisible()
                 
