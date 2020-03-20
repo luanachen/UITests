@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="EuD-ie-wah">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hf6-J4-xQq" customClass="SecondViewController" customModule="UITests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FSM-za-eNG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Snapshot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbc-wx-1Ry">
+                                <rect key="frame" x="85.5" y="429" width="243.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lbc-wx-1Ry" firstAttribute="centerY" secondItem="FSM-za-eNG" secondAttribute="centerY" id="hqu-jI-3Gu"/>
+                            <constraint firstItem="lbc-wx-1Ry" firstAttribute="centerX" secondItem="FSM-za-eNG" secondAttribute="centerX" id="peY-zD-LLB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ANR-Hk-JVb"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="lbc-wx-1Ry" id="F8K-n2-1QS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSD-Dr-cvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="138"/>
+        </scene>
+    </scenes>
+</document>
